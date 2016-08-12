@@ -22,4 +22,3 @@
 //= require agency
 //= require jquery.minicolors
 //= require jquery.minicolors.simple_form
-//= require_tree .
