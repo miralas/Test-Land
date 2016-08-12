@@ -1,0 +1,17 @@
+= simple_form_for(@block) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :menu_name
+    = f.input :content_page_id
+    = f.input :background, as: :minicolors
+    %label Фоновое изображение
+    = f.file_field :background_image
+    = @block.background_image
+    %br
+    = f.input :content
+    / = f.text_area :content, class: 'redactor'
+    = f.input :active
+
+  .form-actions
+    = f.button :submit

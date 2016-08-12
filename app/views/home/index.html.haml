@@ -1,0 +1,112 @@
+%body#page-top.index
+  #rj-loader
+    .preload
+      = image_tag 'preloader.gif'
+
+  %nav.navbar.navbar-default.navbar-fixed-top
+    .container-fluid
+      .navbar-header.page-scroll
+        %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        %ul.nav.navbar-nav
+          %li.hidden= link_to '', '#page-top'
+          %li.nav-logo-img
+            = link_to root_path, class: 'page-scroll' do
+              = image_tag "#{@settings.logo}"
+              VINKEEPER
+          - @blocks.each do |block|
+            %li= link_to "#{block.menu_name}", "##{block.content_page_id}", class: 'page-scroll'
+          %li= link_to @settings.phone, '#contacts', class: 'page-scroll'
+  - @blocks.each do |block|
+    - if @blocks.first == block
+      %header{id: block.content_page_id, style: "background: #{block.background}; background-image: url(#{asset_path(block.background_image)}); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover;"}
+        .intro-text
+          .container
+          %br
+            = raw block.content
+    - else
+      %section{id: block.content_page_id, style: "background: #{block.background} !important; background-image: #{block.background_image};"}
+        %br
+        .container
+          .row
+            .col-lg-12.text-center
+              = raw block.content
+        %br
+  %section#order
+    %br
+    .container
+      .row
+        .col-lg-12.text-center
+          = render partial: 'form'
+    %br
+  %section#contacts
+    %br
+    .container
+      .row
+        .col-lg-12.text-center
+          = render partial: 'contacts'
+    %br
+  / %header
+  /   .intro-text
+  /     .container
+  /     %br
+  /       / = render partial: 'start'
+  / %section#products
+  /   %br
+  /   .container
+  /     .row
+  /       .col-lg-12.text-center
+  /         / = render partial: 'products'
+  / %section#advantages
+  /   %br
+  /   .container
+  /     .row
+  /       .col-lg-12.text-center
+  /         / # = render partial: 'advantages'
+  / %section#services
+  /   %br
+  /   .container
+  /     .row
+  /       .col-lg-12.text-center
+  /         / # = render partial: 'services'
+  / %section#installs
+  /   %br
+  /   .container
+  /     .row
+  /       .col-lg-12.text-center
+  /         / # = render partial: 'installs'
+  / %section#clients
+  /   %br
+  /   .container
+  /     .row
+  /       .col-lg-12.text-center
+  /         / # = render partial: 'clients'
+  / %section#order
+  /   %br
+  /   .container
+  /     .row
+  /       .col-lg-12.text-center
+  /         / # = render partial: 'form'
+  / %section#contacts
+  /   %br
+  /   .container
+  /     .row
+  /       .col-lg-12.text-center
+  /         / # = render partial: 'contacts'
+
+  #tachograph.modal.fade{:role => "dialog"}
+    .modal-dialog
+      .modal-content
+        .modal-body
+          %button.close{"data-dismiss" => "modal"}×
+          .content-order{style: 'padding:10px'}
+            = image_tag 'preloader.gif'
+            .content
+              %p
+                Вы оставили заявку.
+                %br
+                В ближайшее время наши менеджер свяжутся с вами

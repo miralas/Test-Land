@@ -1,0 +1,416 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require framework_and_overrides
+ *= require agency
+ *= require framework_and_overrides.css
+ *= require font-awesome
+ *= require jquery.minicolors
+ */
+
+header {
+  background-repeat: none;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #000;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+  position: relative;
+  display: table;
+  text-shadow: 2px 1px 2px black, 0 0 2em #f9ff4c;
+}
+
+li.nav-logo-img{
+  padding-top: 0px !important;
+  img{
+    max-height: 50px;
+  }
+}
+
+.navbar-nav li{
+  padding-top: 14px;
+}
+
+.logo{
+  text-align: right;
+  padding-right: 50px
+}
+
+.contacts{
+  text-align: left;
+  padding-left: 50px;
+  .phone{
+    text-align: left;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(47, 46, 46);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(47, 46, 46);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(47, 46, 46);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(47, 46, 46);
+    border-top-style: none;
+    border-top-width: 0px;
+    color: rgb(47, 46, 46);
+    display: inline;
+    font-family: 'open sans condensed', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    height: auto;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgb(47, 46, 46);
+    outline-style: none;
+    outline-width: 0px;
+  }
+  .email{
+    text-align: left;
+    font-size: 32px;
+    background: transparent;
+    font-family: open sans condensed,sans-serif;
+    color: #2F2E2E;
+    text-decoration: underline; 
+
+  }
+}
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {
+  float:none;
+  border: none;
+}
+
+.navbar-header{
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .container-fluid .navbar-brand{
+    margin-left: 0 !important;
+  }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    a{
+      color: #A0A09F;
+    }
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+
+.logo-icon{
+  max-width: 86px;
+  max-height: 86px;
+}
+
+.intro-text ul{
+  font-family: 'open sans condensed', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  color: white;
+  li{
+    margin: 10px;
+    list-style: none;
+  }
+}
+
+#products{
+  img{
+    margin: 10px;
+  }
+  .text-center{
+    padding: 10px;
+  }
+  span{
+    color: red  ;
+  }
+}
+
+#advantages{
+  padding: 170px 0;
+  background: url(tachograph/bg-advantages.jpg);
+  h2,
+  h3{
+    color: white;
+  }
+  p{
+    color: white;
+  }
+}
+
+#services{
+  padding: 170px 0;
+  background: white;
+  h2{
+    color: black;
+    margin-bottom: 30px;
+  }
+  a{
+    margin-top: 30px;
+  }
+  p{
+    color: black;
+  }
+  img{
+    min-height: 75px;
+    margin-bottom: 10px;
+  }
+}
+
+#contacts{
+  color: black;
+  background-color: white;
+  h2,
+  h3{
+    text-align: left;
+    color: black;
+  }
+  img{
+    margin: 20px;
+    min-height: 45px;
+  }
+  p{
+    text-align: left;
+  }
+}
+
+
+header{
+  .price span{
+    color: rgb(230, 18, 18);
+  }
+  p{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(255, 255, 255);
+    border-top-style: none;
+    border-top-width: 0px;
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-family: din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: auto;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: center;
+    vertical-align: baseline;
+    width: auto;
+    word-wrap: break-word;
+  }
+  i{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(255, 255, 255);
+    border-top-style: none;
+    border-top-width: 0px;
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-family: din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: normal;
+    height: auto;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: center;
+    vertical-align: baseline;
+    width: auto;
+    word-wrap: break-word;
+  }
+}
+
+#clients{
+  background: white;
+  img{
+    margin: 30px;
+    max-height: 90px;
+  }
+  .text-content .col-md-4{
+    padding: 10px;
+  }
+  .text-content .col-md-2{
+    padding: 10px;
+  }
+}
+
+#tachograph{
+  text-align: center;
+  .content p{
+    font-size: large;
+  }
+}
+
+#installs{
+  padding: 170px 0;
+  background: rgb(32, 32, 32);
+  p{
+    color: white;
+    margin-bottom: 40px;
+  }
+  h2{
+    color: white;
+    margin-bottom: 40px;
+  }
+  ul{
+    padding: 0 8%;
+    list-style: none;
+    display: flex;
+    .line{
+      margin: 40px 0;
+    }
+    li p{
+      color: white;
+      margin-top: 10px;
+      font-size: large;
+    }
+    img{
+      margin: 0 40px;
+    }
+  }
+}
+
+#order{
+  background: rgb(32, 32, 32);
+  h1{
+    color: white;
+  }
+  .container{
+    padding: 10% 20%;
+  }
+}
+
+.form-order{
+  form input {
+    height: 50px;
+    width: 100%;
+    font-size: large;
+    margin: 0px 0px 25px 0px;
+  }
+  .commet-field{
+    height: 100px;
+    font-size: large;
+  }
+}
+
+.ot-circle {
+  height: 95px;
+  width: 95px;
+  text-align: center;
+  line-height: 90px;
+  color: #3E3E3E;
+  border: 3px solid #000;
+  border-radius: 100px;
+  background-color: #E8E8E8; 
+  margin: 0 2px 4px;
+  font-size: 31px;
+}

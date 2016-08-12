@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Menu name:
+  = @block.menu_name
+%p
+  %b Content page:
+  = @block.content_page_id
+%p
+  %b Background:
+  = @block.background
+%p
+  %b Background image:
+  = @block.background_image
+%p
+  %b Content:
+  = @block.content
+%p
+  %b Active:
+  = @block.active
+
+= link_to 'Edit', edit_block_path(@block)
+\|
+= link_to 'Back', blocks_path

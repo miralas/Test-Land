@@ -1,0 +1,16 @@
+.row.text-content
+    .form-order
+        %h1 Оставить заявку
+        = simple_form_for @order, url: 'order', remote: true do |f|
+            = f.input :name, label: false, placeholder: 'Имя'
+            / = f.input :email, label: false, placeholder: 'Email'
+            = f.input :phone, label: false, placeholder: 'Телефон'
+            = f.input :comment, label: false, placeholder: 'Детали заявки', input_html: {class: 'commet-field'}
+            = f.submit 'ОСТАВИТЬ ЗАЯВКУ', class: 'btn btn-success button-order'
+:javascript
+    $(document).ready(function(){
+        $('.button-order').click(function(){
+            $('#tachograph .content').hide();
+            $('#tachograph').modal('show');
+        });
+    });

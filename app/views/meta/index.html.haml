@@ -1,0 +1,23 @@
+%h1 Listing meta
+
+%table
+  %thead
+    %tr
+      %th Keywords
+      %th Description
+      %th
+      %th
+      %th
+
+  %tbody
+    - @meta.each do |metum|
+      %tr
+        %td= metum.keywords
+        %td= metum.description
+        %td= link_to 'Show', metum
+        %td= link_to 'Edit', edit_metum_path(metum)
+        %td= link_to 'Destroy', metum, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Metum', new_metum_path

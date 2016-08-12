@@ -1,0 +1,14 @@
+ru:
+  simple_form:
+    labels:
+      defaults:
+        password: Пароль
+        remember_me: Запомнить меня
+        menu_name: Название пункта в меню
+        content_page_id: ID блока с контентом
+        background: Цвет фона
+        active: Активен
+        logo: Логотип
+        phone: Телефон
+        preloader: Прелоадер
+        submit: Сохранить
