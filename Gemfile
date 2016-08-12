@@ -15,6 +15,7 @@ gem 'haml-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-minicolors-rails'
 gem 'i18n', github: 'svenfuchs/i18n'
+gem 'mina'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
