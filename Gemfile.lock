@@ -119,6 +119,7 @@ GEM
     letter_opener (1.4.1)
       launchy (~> 2.2)
     libv8 (3.16.14.15)
+    lightbox-bootstrap-rails (3.3.0.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -267,6 +268,7 @@ DEPENDENCIES
   jquery-turbolinks
   jquery-ui-rails
   letter_opener
+  lightbox-bootstrap-rails
   mina
   mini_magick
   mysql2

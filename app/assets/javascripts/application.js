@@ -15,3 +15,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require agency
+//= require lightbox-bootstrap
+//= require lightbox_bootstraped
