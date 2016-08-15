@@ -416,3 +416,9 @@ header{
   margin: 0 2px 4px;
   font-size: 31px;
 }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
