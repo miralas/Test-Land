@@ -45,10 +45,10 @@ h3,
 h4,
 h5,
 h6 {
-  /*font-family: "PT Sans", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-family:"PT Sans","Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform:uppercase;
+  font-weight:700;
+  margin-bottom:20px;
 }
 .img-centered {
   margin: 0 auto;
@@ -105,7 +105,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   color: #ffffff;
-  background-col/*or: #0f9583;
+  /*background-color: #0f9583;
   border-color: #0f9583;*/
   /*font-family: "PT Sans", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   text-transform: uppercase;
@@ -143,7 +143,7 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  backgrou/*nd-color: #0f9583;
+  /*background-color: #0f9583;
   border-color: #0f9583;*/
 }
 .btn-xl .badge {
