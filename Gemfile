@@ -4,7 +4,6 @@ gem 'devise'
 gem 'redactor-rails'
 gem 'cancancan'
 gem 'rolify'
-gem 'thin'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'jquery-turbolinks'
@@ -19,7 +18,7 @@ gem 'i18n', github: 'svenfuchs/i18n'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
 # Use Uglifier as compressor for JavaScript assets
@@ -55,6 +54,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry'
   gem 'letter_opener'
+  gem 'thin'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -68,5 +69,6 @@ end
 
 group :production do
   gem 'mysql2'
+  gem 'passenger'
 end
 
