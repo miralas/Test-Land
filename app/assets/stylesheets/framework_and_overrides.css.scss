@@ -1,5 +1,9 @@
 // import the CSS framework
 $navbar-height: 40px;
+$screen-md-min: 960px !default;
+
+$grid-float-breakpoint: $screen-md-min;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 @import "bootstrap";
 
 // make all images responsive by default
