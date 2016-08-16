@@ -36,6 +36,7 @@ header {
   position: relative;
   display: table;
   text-shadow: 2px 1px 2px black, 0 0 2em #f9ff4c;
+  margin: 0px;
 }
 
 li.nav-logo-img{
@@ -415,10 +416,4 @@ header{
   background-color: #E8E8E8; 
   margin: 0 2px 4px;
   font-size: 31px;
-}
-
-.img-responsive {
-  max-width: 100%;
-  height: auto;
-  padding: 10px;
 }

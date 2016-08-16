@@ -22,6 +22,12 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 
 body { font-family: Cambria; }
 
+.img-responsive {
+  @extend .img-responsive;
+  display: inherit;
+  padding: 10px 0;
+}
+
 .navbar-right, .navbar-brand {
   @extend .nav-border;
 }
